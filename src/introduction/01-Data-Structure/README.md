@@ -38,7 +38,7 @@ Think of ADT as a black box which hides the inner structure and design of the da
 - Nonlinear Data Structures
 
   - A data structure is non linear when all the elements are not arranged in a linear (sequential) order. There is no linear arrangement of the elements.
-  - Exemaples: Tree, Graph
+  - Examples: Tree, Graph
 
 - Static Data Structures
 
