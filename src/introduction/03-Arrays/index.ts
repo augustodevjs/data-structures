@@ -15,11 +15,3 @@ console.log(dynamicArray.size()); // Output: 3
 console.log(dynamicArray.get(1)); // Output: 2
 dynamicArray.pop();
 console.log(dynamicArray.size()); // Output: 2
-
-// Usage example:
-const myHashTable = new HashTable<number>(10);
-myHashTable.set('apple', 5);
-myHashTable.set('banana', 10);
-console.log(myHashTable.get('apple')); // Output: 5
-console.log(myHashTable.get('banana')); // Output: 10
-console.log(myHashTable.get('orange')); // Output: undefined

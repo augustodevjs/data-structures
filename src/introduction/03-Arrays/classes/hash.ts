@@ -1,5 +1,5 @@
 export class HashTable<T> {
-  private readonly data: Array<Array<[string, T]>>;
+  private readonly data: Array<Array<[string, T]>>; // [['Apple', 10]]
 
   constructor(size: number) {
     this.data = new Array(size);
@@ -34,4 +34,17 @@ export class HashTable<T> {
     }
     return undefined;
   }
+
+  public getAll(): [string, T][][] {
+    return this.data;
+  }
 }
+
+// Usage example:
+const myHashTable = new HashTable<number>(10);
+myHashTable.set('apple', 5);
+myHashTable.set('banana', 10);
+console.log(myHashTable.get('apple')); // Output: 5
+console.log(myHashTable.get('banana')); // Output: 10
+console.log(myHashTable.get('orange')); // Output: undefined
+console.log(myHashTable.getAll());
