@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/two-sum/
 
+// O(N²)
 const twoSum = (nums: number[], target: number): number[] => {
   const output: number[] = [];
 
